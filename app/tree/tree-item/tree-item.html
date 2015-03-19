@@ -1,0 +1,7 @@
+<div ng-style="{'margin-left':(item.getLevel() * 7)+'px'}" class="tree-item">
+    <!--{{marginLeft}}<br>-->
+    {{item.getName()}}
+    <button class="btn btn-success" ng-click="add($event)">Add</button>
+    <button class="btn btn-primary" ng-click="edit($event)">Edit</button>
+    <button class="btn btn-danger" ng-show="item.getParent()" ng-click="delete($event)">Remove</button>
+</div>

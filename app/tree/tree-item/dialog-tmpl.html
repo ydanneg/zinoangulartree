@@ -1,0 +1,19 @@
+<md-dialog aria-label="Name">
+    <md-content>
+        <form name="nameForm">
+            <md-input-container>
+                <label>Item name</label>
+                <input required name="name" ng-model="item_name">
+
+                <div ng-show="nameForm.name.$error.required" ng-messages="nameForm.name.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+        </form>
+    </md-content>
+    <div class="md-actions" layout="row">
+        <md-button ng-disabled="nameForm.name.$error.required" ng-click="answer()" class="md-primary">
+            OK
+        </md-button>
+    </div>
+</md-dialog>

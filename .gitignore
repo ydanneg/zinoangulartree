@@ -1,0 +1,9 @@
+.idea
+app/bower_components
+build
+node_modules
+npm-debug.log
+app/lib
+bower_components
+app/**/*.js
+tests/**/*.js
