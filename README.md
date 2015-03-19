@@ -30,4 +30,4 @@ Test task project.
     npm test
 ## Start
     npm start
-Goto http://localhost:8000/app in your favorite Chrome :) browser
+Goto http://localhost:8000 in your favorite Chrome :) browser
